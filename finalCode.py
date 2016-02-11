@@ -2,7 +2,11 @@ import os
 import zipfile
 import xml.etree.ElementTree as ET
 
-os.chdir("/Users/phanindra/Documents/open")
+FilePath = str(raw_input("Enter the path og zip file : "))
+
+os.chdir(FilePath)
+
+
 
 folders = []
 files = []
