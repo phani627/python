@@ -7,7 +7,6 @@ FilePath = str(raw_input("Enter the path og zip file : "))
 os.chdir(FilePath)
 
 
-
 folders = []
 files = []
 Ids = []
@@ -26,7 +25,8 @@ for name in z.namelist():
     else:
         print "file name : ",name
 '''
-z.extractall()
+z.extractall("extracted")
+os.chdir(FilePath+"/extracted")
 
 for tup in os.walk(os.getcwd()):
     print "***************************************\n"
